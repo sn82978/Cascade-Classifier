@@ -4,8 +4,8 @@ import re
 import shutil
 
 DATAPATH = "/home/drosophila-lab/Documents/Fecundity/04-30-cap-800x800-sliced-Alexander"
-POSDIR = "/home/drosophila-lab/Documents/Fecundity/Haar-Cascade/p/"
-NEGDIR = "/home/drosophila-lab/Documents/Fecundity/Haar-Cascade/n/"
+POSDIR = "/home/drosophila-lab/Documents/Fecundity/Cascade-Classifier/p/"
+NEGDIR = "/home/drosophila-lab/Documents/Fecundity/Cascade-Classifier/n/"
 
 # split zeros into n, and the rest is p
 

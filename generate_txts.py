@@ -1,6 +1,6 @@
 import os
 
-NEGDIR = "/home/drosophila-lab/Documents/Fecundity/Haar-Cascade/n"
+NEGDIR = "./n"
 
 def make_negative_txt():
     with open('n.txt', 'w')  as file:
@@ -12,3 +12,6 @@ def make_positive_txt():
     # find where the bounding boxes coors are (4)
     # needs to be in format of p/filename 1coor1 1coor2 1coor3 1coor4   2coor1 2coor2 2coor3 2coor4
     pass
+
+if __name__ == '__main__':
+    make_negative_txt()
