@@ -1,6 +1,7 @@
 import os
 
 NEGDIR = "./n"
+POSDIR = "./p"
 
 def make_negative_txt():
     with open('n.txt', 'w')  as file:
@@ -8,10 +9,9 @@ def make_negative_txt():
             file.write(f"n/{filename}\n")
 
 def make_positive_txt():
-    # reconstruct imgs
-    # find where the bounding boxes coors are (4)
-    # needs to be in format of p/filename 1coor1 1coor2 1coor3 1coor4   2coor1 2coor2 2coor3 2coor4
-    pass
+    with open('p.txt', 'w')  as file:
+        for filename in os.listdir(POSDIR):
+            file.write(f"p/{filename}\n")
 
 if __name__ == '__main__':
-    make_negative_txt()
+    make_positive_txt()
